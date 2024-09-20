@@ -4,7 +4,6 @@
 
 /* CSS variables */
 :root {
-  --background-color: #F6F6F2;
   --primary-light: #F6F6F2;
   --secondary-light: #C2EDCE;
   --main-color: #BADFE7;
@@ -19,7 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb)); /* Text color */
-  background-color: var(--background-color); /* Background color */
+  background-color: var(--primary-light); /* Background color */
 }
 
 /* Navbar */
@@ -50,3 +49,5 @@ body {
   font-weight: bold;
   padding: 0.5rem 1rem;
 }
+
+/* Footer */
