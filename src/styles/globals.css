@@ -4,11 +4,13 @@
 
 /* CSS variables */
 :root {
-  --primary-light: #F6F6F2;
-  --secondary-light: #C2EDCE;
-  --main-color: #BADFE7;
-  --secondary-dark: #6FB3B8;
-  --primary-dark: #388087;
+  --primary-light: #FBFBF9;
+  --secondary-light: #FEDCD2;
+  --main-color: #BFD8D2;
+  --accent: #DCB239;
+  --secondary-dark: #DF744A;
+  --primary-dark: #717568;
+  --main-font: 'Poppins';
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -21,33 +23,57 @@ body {
   background-color: var(--primary-light); /* Background color */
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+}
+
 /* Navbar */
 /* Navbar container */
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--main-color);
   color: var(--primary-light);
 }
 /* Navbar text */
 .nav-container .nav-link {
   color: var(--primary-light);
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.25rem;
+  font-family: var(--main-font), sans-serif;
+  font-size: 1.1rem;
   padding: 0.5rem 1rem;
   transition: color 0.3s ease;
 }
 .nav-container .nav-link:hover {
-  color: var(--secondary-light);
+  color: var(--accent);
 }
 .logo {
   color: var(--primary-light);
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
+  font-family: var(--main-font), sans-serif;
+  font-size: 1.25rem;
   font-weight: bold;
   padding: 0.5rem 1rem;
 }
 
 /* Footer */
+.foot-container {
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--secondary-light);
+  color: var(--primary-light);
+}
+.foot-title {
+  color: var(--primary-light);
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: var(--main-font), sans-serif;
+  padding: 1rem;
+}
