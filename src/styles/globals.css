@@ -99,3 +99,14 @@ body {
   bottom: 10px;
   right: 10px;
 }
+
+/* Home page */
+.return-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  color: var(--primary-light);
+  z-index: 1000; /* Ensure it appears above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for effect */
+  transition: opacity 0.3s ease; /* Smooth fade-in/out */
+}
